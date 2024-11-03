@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css" />
     <title>Formulario</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    
+  <body>
     <div class="login">
-        <div class="form-container">
-            <img src="https://talentotech.gov.co/849/channels-748_logo_talentotech.png" alt="logo-tech"
-                class="logo-tech">
-            <h1>Bienvenido</h1>
-            <form action>
-                <label for>Nombre</label>
-                <input type="text" id="name" placeholder="Nombre">
-                <label for>Correo</label>
-                <input type="email" name id="email" placeholder="Correo">
-                <label for>Password</label>
-                <input type="password" name id="password" placeholder="Contraseña">
-                <button type="submit" class="primarybutton" id="enviar">Enviar</button>
-                <div class="enlaces">
-                    <a href="/formulario-27102024/indexReg.html" class="NoReg">¿No estas registrado?</a>
-                    <a href="/formulario-27102024/indexRec.html" class="RecCon">Recuperación de Contraseña</a>
-                </div>
-            </form>
-        </div>
+      <div class="form-container">
+        <img
+          src="https://talentotech.gov.co/849/channels-748_logo_talentotech.png"
+          alt="logo-tech"
+          class="logo-tech"
+        />
+        <h1>Bienvenido</h1>
+        <form action>
+          <h2 id="textName">Nombre</h2>
+          <input type="text" id="name" placeholder="Nombre" />
+          <h2 id="textEmail">Correo</h2>
+          <input type="email" name id="email" placeholder="Correo" />
+          <h2 id="textPassword">Contraseña</h2>
+          <input type="password" name id="password" placeholder="Contraseña" />
+          <button
+            type="button"
+            class="primarybutton"
+            id="enviar"
+            onclick="validar()"
+          >
+            Enviar
+          </button>
+          <div class="enlaces">
+            <a href="/Proyecto_Formulario/indexReg.html" class="NoReg"
+              >¿No estas registrado?</a
+            >
+            <a href="/Proyecto_Formulario/indexRec.html" class="RecCon"
+              >Recuperación de Contraseña</a
+            >
+          </div>
+        </form>
+      </div>
     </div>
-    <script src="/formulario-27102024/JS/main.js"></script>
-</body>
-
+    <script src="/Proyecto_Formulario/JS/main.js"></script>
+  </body>
 </html>
